@@ -59,8 +59,7 @@ catkin build -j12 --cmake-args \
 cd ../ros_ws
 source ../deps_ws/devel/setup.bash
 rosdep install -y -i --from-paths src --rosdistro $ROS_DISTRO
-catkin build --cmake-args \
-    -DCMAKE_BUILD_TYPE=Release
+catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
 # Launch
